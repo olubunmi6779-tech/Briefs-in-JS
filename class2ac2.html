@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class phone{
+            constructor(company){
+                this.company = company;
+            }
+            present(){
+                return "I have a phone from" + this.company
+            }
+        }
+
+        class Model extends phone{
+            constructor(company, model){
+                super(company);
+                this.model = model
+            }
+            show(){
+                return this.present() + "this is the model"  + this.model;
+            }
+        }
+        let Model1 = new Model("Samsung", "Apple");
+        document.write(Model1.show())
+    </script>
+</body>
+</html>
