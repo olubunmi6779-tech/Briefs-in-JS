@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <h1> Ascending & Descending order</h1>
+    <button onclick="asc()">Ascending order</button>
+    <button onclick="dec()">Descending order</button>
+    <script>
+        var number = [6, 66, 23, 56, 88, 2, 1, 45];
+
+        document.getElementById("id1").innerHTML = number;
+
+        function asc(){
+            number.sort(function(a,b){
+                return a-b;
+            });
+            document.getElementById("id1").innerHTML = number;
+        }
+
+        function dec(){
+            number.sort(function(a,b){
+                return b-a;
+            })
+            document.getElementById("id1").innerHTML = number;
+        }
+    </script>
+</body>
+</html>
