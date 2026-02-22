@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <script>
+        var num = [5,12,9]
+
+        function f1(number){
+            return number *10;
+        }
+        
+        var new_num = num.map(f1);
+        document.getElementById("id1").innerHTML = new_num;
+
+    </script>
+</body>
+</html>
